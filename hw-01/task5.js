@@ -1,5 +1,4 @@
-// "use strikt";
-// let countryDelivery;
+// "use strict";
 // const countryCreditChina = 100;
 // const countryCreditChile = 250;
 // const countryCreditAustralia = 170;
@@ -14,35 +13,35 @@
 //   const country = result.toLowerCase();
 //   switch (country) {
 //     case "китай": {
-//       countryDelivery == countryCreditChina;
+//       countryCreditChina;
 //       alert(
 //         `Доставка в ${country} будет стоить ${countryCreditChina} кредитов`
 //       );
 //       break;
 //     }
 //     case "чили": {
-//       countryDelivery == countryCreditChile;
+//       countryCreditChile;
 //       alert(
 //         `Доставка в ${country} будет стоить ${countryCreditChile} кредитов`
 //       );
 //       break;
 //     }
 //     case "австралия": {
-//       countryDelivery == countryCreditAustralia;
+//       countryCreditAustralia;
 //       alert(
 //         `Доставка в ${country} будет стоить ${countryCreditAustralia} кредитов`
 //       );
 //       break;
 //     }
 //     case "индия": {
-//       countryDelivery == countryCreditIndia;
+//       countryCreditIndia;
 //       alert(
 //         `Доставка в ${country} будет стоить ${countryCreditIndia} кредитов`
 //       );
 //       break;
 //     }
 //     case "ямайка": {
-//       countryDelivery == countryCreditJamaica;
+//       countryCreditJamaica;
 //       alert(
 //         `Доставка в ${country} будет стоить ${countryCreditJamaica} кредитов`
 //       );
@@ -51,6 +50,7 @@
 
 //     default: {
 //       alert("В вашей стране доставка не доступна");
+//       break;
 //     }
 //   }
 // }
