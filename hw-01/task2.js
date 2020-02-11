@@ -1,6 +1,6 @@
 "use strict";
 const total = 100;
-const ordered = 101;
+const ordered = 20;
 let message;
 
 if (ordered > total) {
