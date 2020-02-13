@@ -1,4 +1,5 @@
-"usestrict";
+"use strict"
+
 const checkForSpam = function(message) {
   if (
     message.toLowerCase().includes("spam") ||
