@@ -1,34 +1,27 @@
-// // Напиши скрипт, который, для объекта user, последовательно:
+// Напиши скрипт, который, для объекта user, последовательно:
 
-// // добавляет поле mood со значением 'happy'
-// // заменяет значение hobby на 'skydiving'
-// // заменяет значение premium на false
-// // выводит содержимое объекта user в формате ключ:значение используя Object.keys() и for...of
+// добавляет поле mood со значением 'happy'
+// заменяет значение hobby на 'skydiving'
+// заменяет значение premium на false
+// выводит содержимое объекта user в формате ключ:значение используя Object.keys() и for...of
 
+const user = {
+  name: "Mango",
+  age: 20,
+  hobby: "html",
+  premium: true
+};
 
-// const user = {
-//   name: 'Mango',
-//   age: 20,
-//   hobby: 'html',
-//   premium: true,
-// };
+console.log("user: ", user);
 
-// console.log('user: ', user);
+user.mood = "happy";
+user.hobby = "skydiving";
+user.premium = false;
 
-// user.mood = 'happy';
-// user.hobby = 'skydiving';
-// user.premium = false;
+const keys = Object.keys(user);
 
-   
-//  const keys = Object.keys(user);
- 
-//   for (const key of keys) {
-//     console.log('key: ', key);
-//     console.log('user[key]: ', user[key]);
-    
-//     }
-
-
-// console.log('userModified:', user);
-
-
+for (const key of keys) {
+  key == name;
+  // console.log('user[key]: ', user[key]);
+}
+console.log("userModified:", user);
