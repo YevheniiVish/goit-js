@@ -1,14 +1,7 @@
 "use strict";
 
 const checkForSpam = function(message) {
-  if (
-    message.toLowerCase().includes("spam") ||
-    message.includes("sale")
-  ) {
-    return true;
-  } else {
-    return false;
-  }
+  return message.toLowerCase().includes("spam") || message.includes("sale");
 };
 
 console.log(checkForSpam("Latest technology news")); // false
