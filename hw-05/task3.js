@@ -9,6 +9,26 @@ addItem(item) - получает новый товар и добавляет е�
 removeItem(item) - получет товар и, если он есть, удаляет его из текущих
 */
 
+class Storage {
+  constructor ([...items]) {
+    this.items = items;
+  }
+
+  getItems() {
+    return this.items;
+  }
+  addItem(item) {
+    this.items.push(item);
+  }
+  removeItem(item) {
+    for (let i = 0; i < items.length; i += 1) {
+      if (this.items[i] == item) {
+        this.items.splice(i, 1)
+      }
+    }    
+  }
+}
+
 const storage = new Storage([
   'Нанитоиды',
   'Пролонгер',
