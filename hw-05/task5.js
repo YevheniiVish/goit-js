@@ -9,7 +9,7 @@ class Car {
    */
   static getSpecs(car) {
     console.log(
-      `maxSpeed: ${this.maxSpeed}, speed: ${this.speed}, isOn: ${this.isOn}, distance: ${this.distance}, price: ${this.price}`
+      `maxSpeed: ${car.maxSpeed}, speed: ${car.speed}, isOn: ${car.isOn}, distance: ${car.distance}, price: ${car.price}`
     );
   }
 
@@ -23,24 +23,24 @@ class Car {
    *  isOn - заведен ли автомобиль, значения true или false. Изначально false
    *  distance - общий киллометраж, изначально 0
    */
-  constructor({ speed = 0, price, maxSpeed, isOn = false, distance = 0 }) {
-    this.speed = speed;
-    this.price = price;
+  constructor({ price, maxSpeed }) {
+    this.speed = 0;
+    this._price = price;
     this.maxSpeed = maxSpeed;
-    this.isOn = isOn;
-    this.distance = distance;
+    this.isOn = false;
+    this.distance = 0;
   }
 
   /*
    * Добавь геттер и сеттер для свойства price,
    * который будет работать с свойством цены автомобиля.
    */
-  get _price() {
-    return this.price;
+  get price() {
+    return this._price;
   }
 
-  set _price(price) {
-    this.price;
+  set price(price) {
+    this._price = price;
   }
   /*
    * Добавь код для того чтобы завести автомобиль
@@ -87,7 +87,7 @@ class Car {
    */
   drive(hours) {
     if (this.isOn) {
-      this.distance = hours * this.speed;
+      this.distance = hours * this.speed + this.distance;
     }
   }
 }
