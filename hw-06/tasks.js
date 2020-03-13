@@ -123,13 +123,11 @@ console.log("Task9: ", getNamesSortedByFriendsCount(users));
 //  при этом не должно быть повторяющихся умений и они должны быть отсортированы в алфавитном порядке.
 
 const getSortedUniqueSkills = users => {
-  // твой код
-  const sortFriendNumber = (a, b) => a.skills.length - b.skills.length;
-  users.sort(sortFriendNumber).map(user => user.skills);
-
-  return users.reduce((allSkills, user) => { 
-      allSkills.push(...user.skills), [];
-    });
+  const userSkills = users.reduce((allSkills, user) => {
+    allSkills.push(...user.skills);
+    return allSkills.sort();
+  }, []);
+  return [...new Set(userSkills)];
 };
 
 console.log("Task10: ", getSortedUniqueSkills(users));
