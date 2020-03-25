@@ -11,6 +11,7 @@
 Категория: Животные
 Количество элементов: 4
 */
+"use strict";
 
 const listCategories = document.querySelectorAll(".item");
 
