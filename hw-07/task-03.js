@@ -34,7 +34,7 @@ const listImgGallery = document.querySelector("#gallery");
 let string = "";
 
 images.forEach(image => {
-  string = `<li><img src="${image.url}" alt="${image.alt}" width='400px'<li>`;
+  string = `<li><img src="${image.url}" alt="${image.alt}" width='200px'<li>`;
   listImgGallery.insertAdjacentHTML("beforeend", string);
 });
 

@@ -26,5 +26,17 @@
 
 "use strict";
 
-const inputBox = document.querySelector("#validation-input");
-inputBox.addEventListener("blur");
+const input = document.querySelector("#validation-input");
+let inputTrueLength = input.dataset.length;
+
+input.addEventListener("blur", input => {
+  const element = input.currentTarget;
+  const inputLength = element.value.length;
+
+  if (inputTrueLength == inputLength) {
+    input.classList.add("valid");
+    input.classList.remove("invalid");
+  } else {
+    input.classlist.replace("valid", "invalid");
+  }
+});

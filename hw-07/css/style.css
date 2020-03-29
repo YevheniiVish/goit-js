@@ -1,22 +1,94 @@
 html {
-    box-sizing: border-box;
-    padding: 1px;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+  padding: 1px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  display: grid;
+  padding: 0;
+}
+
+#categories {
+  list-style: none;
+}
+
+.item {
+  margin: 0 auto;
+}
+
+#ingredients {
+  margin: 50px auto;
+}
+
+#ingredients li {
+  margin: auto;
+  list-style: none;
+}
+
+#gallery {
+  list-style: none;
+  gap: 10px;
+}
+
+#gallery li {
+  margin: 0 auto;
+}
+
+#counter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 30px 40%;
+}
+
+#name-input {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.validation {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#value {
+  text-align: center;
+  padding: 3px;
+}
 
 #validation-input {
-    border: 3px solid #bdbdbd;
-  }
-  
-  #validation-input.valid {
-    border-color: #4caf50;
-  }
-  
-  #validation-input.invalid {
-    border-color: #f44336;
-  }
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+#font-size-control {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#text {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
