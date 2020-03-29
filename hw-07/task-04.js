@@ -10,6 +10,26 @@
 </div>
 */
 
-"use strict"
+"use strict";
 
-const 
+let counterValue = 0;
+
+// const incrementBtn = document.querySelector('button[data-action="decrement"]');
+
+const objBtn = {
+  decrementBtn: document.querySelector(`button[data-action="decrement"]`),
+
+  incrementBtn: document.querySelector(`button[data-action="increment"]`),
+
+  valueBtn: document.querySelector("#value")
+};
+
+objBtn.decrementBtn.addEventListener("click", () => {
+  counterValue -= 1;
+  objBtn.valueBtn.textContent = counterValue;
+});
+
+objBtn.incrementBtn.addEventListener("click", () => {
+  counterValue += 1;
+  objBtn.valueBtn.textContent = counterValue;
+});
